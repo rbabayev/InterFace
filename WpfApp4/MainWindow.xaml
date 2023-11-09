@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition  Width="0.33*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" >
+            <TextBox Margin="0 10" x:Name="Make" Width="500" Height="50" Text="Car Make" Foreground="Blue" FontFamily="Bald" BorderThickness="4" />
+            <TextBox  Margin="0 10" x:Name="Model" Width="500" Height="50" Text="Car Model" Foreground="Red" FontFamily="Bald" BorderThickness="4" />
+            <ComboBox  Margin="0 10" x:Name="Year" Width="500" Height="50" Text="Car Year" Foreground="Green" FontFamily="Bald" BorderThickness="4" />
+            <Button Click="SaveButton" Content="Save" Width="70" Background="LightGray" >
+            </Button>
+        
+        </StackPanel>
+
+        <ListView Grid.Column="1" x:Name="CarList">
+            
+        </ListView>
+    
+    
+    </Grid>
+    
+    
+</Window>
